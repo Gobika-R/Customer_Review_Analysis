@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Review Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Review Sentiment Analyzer</h1>
+        <form method="POST" action="/predict">
+            <textarea name="review" placeholder="Type your product review..." required></textarea>
+            <center><button type="submit">Predict Sentiment</button></center>
+        </form>
+        <br>
+        
+        {% if review %}
+        <div class="result">
+            <p><strong>Review:</strong> {{ review }}</p>
+            <br>
+            <p><strong>Predicted Sentiment:</strong> {{ prediction.upper() }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

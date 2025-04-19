@@ -1,0 +1,133 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a pastel gradient background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #a8c0ff, #f1d1ff, #b3e6ff, #ffccf9);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Container to center the content */
+.container {
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent for softness */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for the page */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling (made bigger) */
+input[type="text"] {
+    width: 80%;  /* Increased width to make the input box larger */
+    padding: 20px;  /* Increased padding to make the input field taller */
+    margin-bottom: 20px;  /* Increased space between input and button */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;  /* Increased font size */
+    outline: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+/* Hover effect for input field */
+input[type="text"]:focus {
+    border-color: #ff94c2;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px #ff94c2;
+}
+
+/* Button styling (move it to next line) */
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff94c2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px; /* Add space between input and button */
+    display: block;  /* Makes the button appear on a new line */
+    width: 50%;     /* Make the button full width */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #ff67a3;
+    transform: scale(1.1);
+}
+
+/* Styling for the result text */
+#result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    color: #4a4a4a;
+}
+
+/* Add a pastel-colored card for the sentiment prediction */
+.card {
+    display: inline-block;
+    background: linear-gradient(45deg, #a8c0ff, #f1d1ff, #b3e6ff, #ffccf9);
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+/* Hover effect for card */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Add some spacing between the cards if you have multiple cards */
+.card + .card {
+    margin-left: 10px;
+}
+
+/* Small devices (mobile view) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input[type="text"] {
+        width: 90%;  /* Adjusted width for mobile screens */
+        font-size: 1.2rem;  /* Slightly smaller font for mobile */
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
