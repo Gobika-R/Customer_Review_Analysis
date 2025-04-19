@@ -1,10 +1,3 @@
-# Customer_Review_Analysis
-This project is a sentiment analysis web application that classifies customer reviews as positive, negative, or neutral using machine learning.
-
-Here’s a simple README for your project:
-
----
-
 # Customer Review Sentiment Analysis 🌟
 
 This project performs sentiment analysis on customer reviews to predict whether the reviews are **positive**, **negative**, or **neutral**. It uses a machine learning model to classify the sentiments based on the input review text. The model is trained using the **Flipkart Product Customer Reviews** dataset from Kaggle.
