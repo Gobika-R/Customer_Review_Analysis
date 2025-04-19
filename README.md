@@ -107,10 +107,3 @@ To deploy this app on a cloud platform (like Heroku or AWS), follow these steps:
 
 4. Push your code to the cloud platform and start the application.
 
-## 📝 Contributions
-
-Feel free to fork this project and contribute! Pull requests are always welcome. 😄
-
----
-
-Let me know if you need any changes or additions to this README! 😊
